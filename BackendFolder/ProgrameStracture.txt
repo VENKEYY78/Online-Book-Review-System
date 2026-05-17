@@ -1,0 +1,33 @@
+BackendFolder/
+│
+├── venv/
+│
+├── CodingFolder/
+│   ├── main.py
+│   │
+│   ├── config/
+│   │   └── db.py
+│   │
+│   ├── models/
+│   │   ├── user_model.py
+│   │   ├── book_model.py
+│   │   └── review_model.py
+│   │
+│   ├── schemas/
+│   │   ├── user_schema.py
+│   │   ├── book_schema.py
+│   │   └── review_schema.py
+│   │
+│   ├── routes/
+│   │   ├── auth_routes.py
+│   │   ├── book_routes.py
+│   │   └── review_routes.py
+│   │
+│   ├── controllers/
+│   │   ├── auth_controller.py
+│   │   ├── book_controller.py
+│   │   └── review_controller.py
+│   │
+│   └── utils/
+│       ├── jwt_handler.py
+│       └── password_handler.py
