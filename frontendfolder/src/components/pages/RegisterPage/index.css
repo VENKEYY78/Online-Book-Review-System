@@ -1,0 +1,163 @@
+.register-page-main-bg-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f3f4f6;
+    padding: 20px;
+    font-family: sans-serif;
+}
+
+.register-page-main-bg-container h1 {
+    font-size: 24px;
+    color: #1f2937;
+    text-align: center;
+    margin-bottom: 24px;
+    max-width: 500px;
+    line-height: 1.4;
+}
+
+.register-card-container {
+    background-color: #ffffff;
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    width: 100%;
+    max-width: 450px;
+}
+
+.register-details-form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.register-page-username-container,
+.register-user-mail-id-container,
+.register-user-password-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.username-label,
+.register-user-mail-label,
+.password-label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #4b5563;
+}
+
+.username-input,
+.mail-input-tag,
+.user-password {
+    padding: 10px 14px;
+    font-size: 16px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    outline: none;
+    transition: all 0.2s ease;
+    background-color: #fff;
+}
+
+.username-input:focus,
+.mail-input-tag:focus,
+.user-password:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+.username-input::placeholder,
+.mail-input-tag::placeholder,
+.user-password::placeholder {
+    color: #9ca3af;
+}
+
+.register-page-submit-form-button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.register-page-submit-form-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #3b82f6;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.register-page-submit-form-button:hover {
+    background-color: #2563eb;
+}
+
+.register-page-submit-form-button:active {
+    transform: scale(0.98);
+}
+
+p {
+    margin: 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+.register-details-form-container > p,
+.register-page-submit-form-button-container p:nth-of-type(2) {
+    color: #ef4444;
+    font-weight: 500;
+}
+
+.register-page-submit-form-button-container p:nth-of-type(1) {
+    color: #10b981;
+    font-weight: 500;
+}
+
+
+.go-to-login-button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 20px;
+    background-color: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    border-radius: 8px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.registation-success-message {
+    color: #166534;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.go-to-login-button {
+    padding: 10px 20px;
+    background-color: #16a34a;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.go-to-login-button:hover {
+    background-color: #15803d;
+}
+
+.go-to-login-button:active {
+    transform: scale(0.97);
+}

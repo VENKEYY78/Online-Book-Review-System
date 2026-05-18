@@ -1,0 +1,112 @@
+.add-book-page-main-bg-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f3f4f6;
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+.add-book-page-main-bg-container h1 {
+  font-size: 24px;
+  color: #1f2937;
+  margin-bottom: 24px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.add-book-form-container {
+  background-color: #ffffff;
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.book-title-input-container,
+.book-author-input-container,
+.book-genre-input-container,
+.book-description-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.title-label,
+.author-label,
+.genre-label,
+.description-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #4b5563;
+}
+
+.title-input,
+.anuthr-input,
+.genre-input,
+.description-input {
+  padding: 10px 14px;
+  font-size: 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  outline: none;
+  transition: all 0.2s ease;
+  background-color: #ffffff;
+  font-family: sans-serif;
+}
+
+.description-input {
+  min-height: 120px;
+  resize: vertical;
+  line-height: 1.5;
+}
+
+.title-input:focus,
+.anuthr-input:focus,
+.genre-input:focus,
+.description-input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+.adding-book-button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.add-book-err-msg {
+  margin: 0;
+  font-size: 14px;
+  text-align: center;
+  color: #ef4444;
+  font-weight: 500;
+}
+
+.add-book-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #3b82f6;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.add-book-button:hover {
+  background-color: #2563eb;
+}
+
+.add-book-button:active {
+  transform: scale(0.98);
+}

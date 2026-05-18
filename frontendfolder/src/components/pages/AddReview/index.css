@@ -1,0 +1,85 @@
+.add-review-page-main-page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.add-review-form-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    box-sizing: border-box;
+}
+
+.rating-select-container,
+.review-text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.rating-select-container label,
+.review-text-container label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #4b5563;
+    font-family: sans-serif;
+}
+
+.rating-dropdown,
+.review-input {
+    width: 100%;
+    padding: 10px 14px;
+    font-size: 15px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    outline: none;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.rating-dropdown:focus,
+.review-input:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+.review-input {
+    resize: vertical;
+    min-height: 100px;
+    line-height: 1.5;
+}
+
+.add-review-submit-button-container {
+    width: 100%;
+    margin-top: 4px;
+}
+
+.add-review-submit-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #3b82f6;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: sans-serif;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.add-review-submit-button:hover {
+    background-color: #2563eb;
+}
+
+.add-review-submit-button:active {
+    transform: scale(0.98);
+}
