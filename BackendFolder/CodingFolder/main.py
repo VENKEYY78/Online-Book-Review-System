@@ -7,9 +7,7 @@ from routes.review_routes import router as review_routes
 
 app = FastAPI(debug=True)
 
-origins = [
-    "http://localhost:5173",
-]
+origins = ["http://localhost:5173", "https://online-book-review-system-3zwp.vercel.app"]
 
 app.middleware("http")(log_requests)
 
@@ -24,3 +22,8 @@ app.add_middleware(
 app.include_router(user_routes)
 app.include_router(book_routes)
 app.include_router(review_routes)
+
+
+@app.get("/")
+def home():
+    return {"message": "Backend Running"}
