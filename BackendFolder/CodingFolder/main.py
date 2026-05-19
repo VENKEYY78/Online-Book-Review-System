@@ -11,6 +11,7 @@ app = FastAPI(debug=True)
 origins = [
     "https://online-book-review-system.vercel.app",
     "https://online-book-review-system-3zwp.vercel.app",
+    "https://online-book-review-system-mmsp.vercel.app",
 ]
 
 
@@ -22,7 +23,6 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-app.middleware("http")(log_requests)
 
 app.add_middleware(BaseHTTPMiddleware, dispatch=log_requests)
 
@@ -30,8 +30,3 @@ app.add_middleware(BaseHTTPMiddleware, dispatch=log_requests)
 app.include_router(user_routes)
 app.include_router(book_routes)
 app.include_router(review_routes)
-
-
-@app.get("/")
-def home():
-    return {"message": "Backend Running"}
