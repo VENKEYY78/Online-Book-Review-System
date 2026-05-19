@@ -40,7 +40,6 @@ const HomePage = () => {
                 setBooksList(response.data.Books_List)
             })
             .catch((error) => {
-                console.log(error)
                 setErrorMsg(error.response.data.detail)
                 
         })

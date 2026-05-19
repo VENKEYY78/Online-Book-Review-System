@@ -1,11 +1,18 @@
-.add-details-page-main-bg-container {
-    display: flex;
+.Book-Details-bg-container {
     min-height: 100vh;
     background-color: #f3f4f6;
     padding: 32px;
     gap: 24px;
+
+}
+
+
+
+.add-details-page-main-bg-container {
+    display: flex;
     font-family: sans-serif;
     box-sizing: border-box;
+    gap: 24px;
 }
 
 .book-details-page-cotainer {

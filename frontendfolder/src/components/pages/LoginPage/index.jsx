@@ -37,7 +37,7 @@ const LoginPage = () => {
             registerUserMailID,
             registerUserPassword,
         }
-        console.log(NewRegisterUserDetails)
+       
 
         try {
             const response = await api.post("/login_user", NewRegisterUserDetails)
@@ -48,7 +48,7 @@ const LoginPage = () => {
             navigate('/')
            
         } catch (error) {
-            const msg = error.response?.data?.detail || "User Login Failed . Try Again.";
+            const msg = error.response.data.detail[0].msg || "User Login Failed . Try Again.";
             setErrorMsg(msg)
         }
 

@@ -67,8 +67,8 @@ def login_user(user: users):
     cursor = conn.cursor(dictionary=True)
     try:
         cursor.execute(
-            "SELECT * FROM users WHERE registerUserMailID = %s",
-            (user.registerUserMailID,),
+            "SELECT * FROM users WHERE registerUserMailID = %s AND registerPageUserName = %s",
+            (user.registerUserMailID, user.registerPageUserName),
         )
         db_user = cursor.fetchone()
         if not db_user:

@@ -51,7 +51,7 @@ const RegisterPage = () => {
             registerUserMailID,
             registerUserPassword,
         }
-        console.log(NewRegisterUserDetails)
+        
 
         try {
             const response = await api.post("/register_user", NewRegisterUserDetails)
@@ -62,7 +62,7 @@ const RegisterPage = () => {
             setRegisterUserPassword("");
             setReEnterRegisteruserPassword("")
         } catch (error) {
-            const msg = error.response?.data?.detail || "User Registration Failed . Try Again.";
+            const msg = error.response.data.detail[0].msg || "User Registration Failed . Try Again.";
             SetRegistrationFailedMsg(msg)
         }
 

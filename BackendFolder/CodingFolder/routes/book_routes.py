@@ -22,20 +22,18 @@ def add_new_book(book: Books, token: str = Depends(oauth2_scheme)):
                 status_code=status.HTTP_401_UNAUTHORIZED,
                 detail="Invalid Token or Toekn Expired",
             )
+        user_id = payload.get("user_id")
         cursor.execute(
-            "INSERT INTO Books (title , author , genre , description) VALUES (%s,%s,%s,%s,%s)",
-            (book.title, book.author, book.genre, book.description),
+            """
+            INSERT INTO Books (title , author , genre ,added_by, description)
+            VALUES (%s,%s,%s,%s,%s)
+            """,
+            (book.title, book.author, book.genre, user_id, book.description),
         )
         book_id = cursor.lastrowid
         conn.commit()
         return {
             "Messege": "Book Added Successfully",
-            "Book_Details": {
-                "Book_id": book_id,
-                "Book_title": book.title,
-                "Book_author": book.author,
-                "Book_description": book.description,
-            },
         }
     finally:
         cursor.close()
