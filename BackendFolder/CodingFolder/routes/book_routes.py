@@ -64,7 +64,7 @@ def get_all_books_from_db(token: str = Depends(oauth2_scheme)):
                 Books.genre, 
                 Books.added_at, 
                 users.registerPageUserName AS added_by_name,
-                AVG(reviews.rating) as average_rating
+                AVG(Reviews.rating) as average_rating
 
             FROM Books 
 

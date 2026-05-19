@@ -5,14 +5,16 @@ from mysql.connector import Error
 def get_connection():
     try:
         conn = mysql.connector.connect(
-            host="localhost",
-            user="root",
-            password="Jvenkatesh78@",
-            database="online_book_review_system_db",
+            host="brc3t8q0i2myq7krlq76-mysql.services.clever-cloud.com",
+            user="ugfx930ldgsynqyc",
+            password="6yTlulvNHjEOt7yczL6V",
+            database="brc3t8q0i2myq7krlq76",
             port=3306,
         )
+
         if conn.is_connected():
-            print("Online Book Review System Database Connected")
+            # print("Online Book Review System Database Connected")
+            print("Database Connected Successfully")
             return conn
     except Error as e:
         print("Database Connection Faild :", e)
@@ -25,4 +27,12 @@ def get_connection():
             password="6yTluLwHHjEOtTyczL6V",
             database="brc3t8q0i2myq7krlq76",
             port=3306,
+
+            conn = mysql.connector.connect(
+            host="localhost",
+            user="root",
+            password="Jvenkatesh78@",
+            database="online_book_review_system_db",
+            port=3306,
+        )
 """
