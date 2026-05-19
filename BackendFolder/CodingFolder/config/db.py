@@ -5,9 +5,9 @@ from mysql.connector import Error
 def get_connection():
     try:
         conn = mysql.connector.connect(
-            host="brc3t8q0i2myq7krlq76-mysql.services.clever-cloud.com",
+            host="brc3t8q0i2myq7krlq76-mysql.services.clever-cloud.com",  # Fixed full host string
             user="ugfx930ldgsynyqc",
-            password="YOUR_PASSWORD",
+            password="6yTluLwHHjEOtTyczL6V",
             database="brc3t8q0i2myq7krlq76",
             port=3306,
         )
