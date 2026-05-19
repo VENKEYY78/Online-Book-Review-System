@@ -132,6 +132,9 @@ const RegisterPage = () => {
                             <button className="register-page-submit-form-button" type="submit">
                                 Register
                             </button>
+                            <button className="register-page-submit-form-button" type="click" onClick={() => navigate("/login_user")}>
+                               Login
+                            </button>
                             <p>{registrationFailedMsg}</p>
                         </div>
                     </form>

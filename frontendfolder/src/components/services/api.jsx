@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: 'https://online-book-review-system-mmsp.vercel.app', 
+    baseURL: 'https://vercel.app', 
     withCredentials: true
 });
   

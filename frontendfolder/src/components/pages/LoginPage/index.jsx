@@ -98,6 +98,7 @@ const LoginPage = () => {
                         </div>
                         <div className='login-button-container'>
                             <button className='login-button' type='submit'>Login</button>
+                            <button className='login-button' type='button' onClick={() => navigate("/register_user")}>Sign In</button>
                         </div>
                         <p>{ errorMsg }</p>
                     </form>

@@ -21,8 +21,9 @@ import './App.css'
 
 const App = () => (
   <BrowserRouter>
+     <Route path="/register_user" element={<RegisterPage />} />
     <Routes>
-      <Route path="/register_user" element={<RegisterPage />} />
+     
       <Route path="/login_user" element={<LoginPage />} />
       <Route path="/" element={
         <ProtectedRoute >
