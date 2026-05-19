@@ -10,7 +10,7 @@ from routes.review_routes import router as review_routes
 app = FastAPI(debug=True)
 
 
-origins = ["http://localhost:5173"]
+origins = ["http://localhost:5173", "https://online-book-review-system.vercel.app"]
 
 
 app.add_middleware(

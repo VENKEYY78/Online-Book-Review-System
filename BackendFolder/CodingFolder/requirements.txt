@@ -4,3 +4,4 @@ mysql-connector-python
 python-jose
 passlib[bcrypt]
 pydantic
+email-validator
