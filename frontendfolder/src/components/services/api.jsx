@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: 'https://vercel.app', 
+    baseURL: 'https://online-book-review-system.vercel.app', 
     withCredentials: true
 });
   
