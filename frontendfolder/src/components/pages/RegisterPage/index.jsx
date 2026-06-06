@@ -56,7 +56,6 @@ const RegisterPage = () => {
         try {
             const response = await api.post("/register_user", NewRegisterUserDetails)
             setSuccessMsg("User Register Successfully");
-            successRef.current?.scrollIntoView({ behavior: "smooth" })
             setRegisterPageUserName("");
             setRegisterUserMailID("");
             setRegisterUserPassword("");

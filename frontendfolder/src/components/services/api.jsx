@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: " https://online-book-review-system-ltmo.onrender.com"
+    baseURL: "https://online-book-review-system-ltmo.onrender.com"
 });
   
 

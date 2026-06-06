@@ -3,36 +3,44 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #f3f4f6;
     box-sizing: border-box;
-}
-
-.add-review-form-container {
+  }
+  
+  .add-review-form-container {
     width: 100%;
+    max-width: 500px;
     display: flex;
     flex-direction: column;
     gap: 16px;
+    background-color: #ffffff;
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
-}
-
-.rating-select-container,
-.review-text-container {
+  }
+  
+  .rating-select-container,
+  .review-text-container {
     display: flex;
     flex-direction: column;
     gap: 8px;
     width: 100%;
     box-sizing: border-box;
-}
-
-.rating-select-container label,
-.review-text-container label {
+  }
+  
+  .rating-select-container label,
+  .review-text-container label {
     font-size: 14px;
     font-weight: 600;
     color: #4b5563;
     font-family: sans-serif;
-}
-
-.rating-dropdown,
-.review-input {
+  }
+  
+  .rating-dropdown,
+  .review-input {
     width: 100%;
     padding: 10px 14px;
     font-size: 15px;
@@ -43,26 +51,26 @@
     box-sizing: border-box;
     font-family: sans-serif;
     transition: border-color 0.2s ease, box-shadow 0.2s ease;
-}
-
-.rating-dropdown:focus,
-.review-input:focus {
+  }
+  
+  .rating-dropdown:focus,
+  .review-input:focus {
     border-color: #3b82f6;
     box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
-}
-
-.review-input {
+  }
+  
+  .review-input {
     resize: vertical;
     min-height: 100px;
     line-height: 1.5;
-}
-
-.add-review-submit-button-container {
+  }
+  
+  .add-review-submit-button-container {
     width: 100%;
     margin-top: 4px;
-}
-
-.add-review-submit-button {
+  }
+  
+  .add-review-submit-button {
     width: 100%;
     padding: 12px;
     background-color: #3b82f6;
@@ -74,17 +82,36 @@
     cursor: pointer;
     font-family: sans-serif;
     transition: background-color 0.2s ease, transform 0.1s ease;
-}
-
-.add-review-submit-button:hover {
+  }
+  
+  .add-review-submit-button:hover {
     background-color: #2563eb;
-}
-
-.add-review-submit-button:active {
+  }
+  
+  .add-review-submit-button:active {
     transform: scale(0.98);
-}
-
-
-
-
-
+  }
+  
+  @media (max-width: 576px) {
+    .add-review-page-main-page-container {
+      padding: 12px;
+      align-items: flex-start;
+    }
+  
+    .add-review-form-container {
+      padding: 20px;
+      gap: 14px;
+    }
+  
+    .rating-dropdown,
+    .review-input {
+      font-size: 14px;
+      padding: 12px;
+    }
+  
+    .add-review-submit-button {
+      padding: 14px;
+      font-size: 15px;
+    }
+  }
+  

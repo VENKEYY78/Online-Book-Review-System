@@ -7,50 +7,59 @@
     background-color: #f3f4f6;
     padding: 20px;
     font-family: sans-serif;
-}
-
-.login-page-greet-heading {
+    box-sizing: border-box;
+  }
+  
+  .login-page-main-bg-container *,
+  .login-page-main-bg-container *:before,
+  .login-page-main-bg-container *:after {
+    box-sizing: border-box;
+  }
+  
+  .login-page-greet-heading {
     font-size: 24px;
     color: #1f2937;
     text-align: center;
     margin-bottom: 24px;
     font-weight: 700;
-}
-
-.user-login-details-container {
+  }
+  
+  .user-login-details-container {
     background-color: #ffffff;
     padding: 32px;
     border-radius: 12px;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     width: 100%;
     max-width: 450px;
-}
-
-.login-details-form-container {
+  }
+  
+  .login-details-form-container {
     display: flex;
     flex-direction: column;
     gap: 20px;
-}
-
-.register-page-username-container,
-.register-user-mail-id-container,
-.register-user-password-container {
+  }
+  
+  .register-page-username-container,
+  .register-user-mail-id-container,
+  .register-user-password-container {
     display: flex;
     flex-direction: column;
     gap: 8px;
-}
-
-.username-label,
-.register-user-mail-label,
-.password-label {
+    width: 100%;
+  }
+  
+  .username-label,
+  .register-user-mail-label,
+  .password-label {
     font-size: 14px;
     font-weight: 600;
     color: #4b5563;
-}
-
-.username-input,
-.mail-input-tag,
-.user-password {
+  }
+  
+  .username-input,
+  .mail-input-tag,
+  .user-password {
+    width: 100%;
     padding: 10px 14px;
     font-size: 16px;
     border: 1px solid #d1d5db;
@@ -58,28 +67,30 @@
     outline: none;
     transition: all 0.2s ease;
     background-color: #ffffff;
-}
-
-.username-input:focus,
-.mail-input-tag:focus,
-.user-password:focus {
+  }
+  
+  .username-input:focus,
+  .mail-input-tag:focus,
+  .user-password:focus {
     border-color: #3b82f6;
     box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
-}
-
-.username-input::placeholder,
-.mail-input-tag::placeholder,
-.user-password::placeholder {
+  }
+  
+  .username-input::placeholder,
+  .mail-input-tag::placeholder,
+  .user-password::placeholder {
     color: #9ca3af;
-}
-
-.login-button-container {
+  }
+  
+  .login-button-container {
     margin-top: 10px;
-}
-
-.login-button {
+    width: 100%;
+  }
+  
+  .login-button {
     width: 100%;
     padding: 12px;
+    margin: 5px;
     background-color: #3b82f6;
     color: #ffffff;
     font-size: 16px;
@@ -87,14 +98,49 @@
     border: none;
     border-radius: 6px;
     cursor: pointer;
-    transition: background-color 0.2s ease;
-    margin: 5px;
-}
-
-.login-button:hover {
+    transition: background-color 0.2s ease, transform 0.1s ease;
+  }
+  
+  .login-button:hover {
     background-color: #2563eb;
-}
-
-.login-button:active {
+  }
+  
+  .login-button:active {
     transform: scale(0.98);
-}
+  }
+  
+  @media (max-width: 480px) {
+    .login-page-main-bg-container {
+      padding: 16px;
+      justify-content: flex-start;
+    }
+  
+    .login-page-greet-heading {
+      font-size: 20px;
+      margin-bottom: 16px;
+      margin-top: 20px;
+    }
+  
+    .user-login-details-container {
+      padding: 20px;
+      box-shadow: none;
+      border: 1px solid #e5e7eb;
+    }
+  
+    .login-details-form-container {
+      gap: 16px;
+    }
+  
+    .username-input,
+    .mail-input-tag,
+    .user-password {
+      font-size: 14px;
+      padding: 12px;
+    }
+  
+    .login-button {
+      padding: 14px;
+      font-size: 15px;
+    }
+  }
+  

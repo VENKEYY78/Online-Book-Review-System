@@ -56,7 +56,6 @@ const AddBook = () => {
             genre,
             description,
         }
-        console.log(AddBookDetails)
 
         try {
             const response = await api.post("/add_new_book", AddBookDetails)
